@@ -253,7 +253,7 @@ def GetStockPrice(T, N, D):
 
 def vol(returns):
     # Return the annualized volatility
-    return np.std(returns)*np.sqrt(252)
+    return np.std(returns)
 
 def sharpe_ratio(er, returns, rf):
     return (er - rf) / vol(returns)
